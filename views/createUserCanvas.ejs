@@ -64,10 +64,16 @@ window.onload=function(){
   <script>
     var isMobile = /iPhone|Android/i.test(navigator.userAgent);
     if (isMobile) {
-      document.getElementById("viewer").style.height = "100px";
+      document.getElementById("viewer").style.height = "680px";
     }
     else {
-      document.getElementById("viewer").style.height = "440px";
+      document.getElementById("viewer").style.height = "600px";
+      window.onload = function () {
+      setTimeout(loadAfterTime, 3000)
+    };
+    function loadAfterTime() {
+        document.getElementById("ar-button").click();
+      }
 
     }
   </script>
