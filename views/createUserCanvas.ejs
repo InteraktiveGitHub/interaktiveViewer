@@ -67,7 +67,7 @@ window.onload=function(){
     
     if (isMobile) {
       document.getElementById("viewer").style.height = "680px";
-      if(/iPad|iPhone/.test(navigator.userAgent){
+      if(/iPad|iPhone/i.test(navigator.userAgent){
        window.onload = function () {
       setTimeout(loadAfterTime, 3000)
     };
