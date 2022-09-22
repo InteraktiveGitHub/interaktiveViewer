@@ -67,18 +67,18 @@ window.onload=function(){
     
     if (isMobile) {
       document.getElementById("viewer").style.height = "680px";
-   
-    }
-   
-    else {
-      document.getElementById("viewer").style.height = "600px";
-        window.onload = function () {
+      if(/iPad|iPhone/.test(navigator.userAgent){
+       window.onload = function () {
       setTimeout(loadAfterTime, 3000)
     };
     function loadAfterTime() {
         document.getElementById("ar-button").click();
       }
       }
+    }
+   
+    else {
+      document.getElementById("viewer").style.height = "600px";
     }
   </script>
 
