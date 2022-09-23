@@ -29,7 +29,7 @@ app.use(function(req, res, next) {
 app.get("/", function(req,res){
   res.send("Interaktive Viewer is up and running");
 })
-app.get("/view", function(req,res){
+app.get("/petpace", function(req,res){
 //   USER.find({api_key: req.query.ApiKey},{_id:1}, function(err, users){
 //     if (err)
 //     console.log(err);
