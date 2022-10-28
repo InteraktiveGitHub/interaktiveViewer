@@ -57,29 +57,6 @@ window.onload=function(){
     <button slot="ar-button" id="ar-button"> activate AR</button>
   </model-viewer>
 
-  <script>
-    const android = /Android/i.test(navigator.userAgent);
- 
-  
-    if (!android) {
-      document.getElementById("Hotspot1").style.visibility = 'hidden';
-      document.getElementById("Hotspot2").style.visibility = 'hidden';
-      document.getElementById("Hotspot3").style.visibility = 'hidden';
-      document.getElementById("Hotspot4").style.visibility = 'hidden';
-     
-       window.onload = function () {
-      setTimeout(loadAfterTime, 3000)
-    };
-    function loadAfterTime() {
-        document.getElementById("ar-button").click();
-      }
-      }     
-   
-    else {
-      document.getElementById("reveal").arModes="webxr quick-look scene-viewer"
-      }
-  </script>
-
 
 
 
